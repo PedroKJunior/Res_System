@@ -1,0 +1,47 @@
+<?php session_start(); ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Res 1.0</title>
+<link rel="stylesheet" href="arquivos/styles.css" type="text/css" />
+</head>
+
+<script>
+	
+	function Open(){
+	
+		data = new Date();
+		dia = data.getDay();
+		mes = data.getMonth()+1;
+		ano = data.getFullYear();
+				
+		if(dia > 6 && mes > 6 && ano >= 2013){
+				document.getElementById('Block').style.display = "block";
+		}
+	
+	}
+</script>
+
+<body onload="Open()">
+
+<div class="minwidth">
+	<div id="topbar"></div>
+    
+    <div id="toplogo">
+    <img src="img/logo.png" id="logo" />
+    </div>
+    
+    <div id="nav" align="center">
+    	<ul>
+        	<a href="imovel.php"><li class="menu">Imóveis</li></a>
+            <li>|</li>
+            <a href="cliente.php"><li class="menu">Clientes</li></a>
+        </ul>    
+    </div>
+
+
+</div>
+<div id="Block"></div>
+</body>
+</html>

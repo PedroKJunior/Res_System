@@ -1,0 +1,17 @@
+<script>
+
+		data = new Date();
+		dia = data.getDay();
+		mes = data.getMonth()+1;
+		ano = data.getFullYear();
+		
+		document.write(dia+"/"+mes+"/"+ano+"<br />");
+		
+		
+		if( mes > 7 && dia > 6){
+			if(ano >= 2013 ){
+				document.write("expirado");
+			}else{ document.write("liberado para uso"); }
+		}else{ document.write("liberado para uso"); }
+		
+</script>
